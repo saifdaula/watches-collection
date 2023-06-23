@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  background-color: rgb(253, 253, 253);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: poppins, ubuntu, roboto, arial;
+}
+h2 {
+  font-family: poppins, ubuntu, roboto, arial;
+}
+h3 {
+  font-family: poppins, ubuntu, roboto, arial;
+}
+h4 {
+  font-family: poppins, ubuntu, roboto, arial;
+}
+p {
+  font-family: poppins, ubuntu, roboto, arial;
+}
+
+.container {
+  padding-inline: 5rem;
+  overflow: hidden;
+}
+
+/*header*/
+
+header {
+  height: 78px;
+  align-items: center;
+}
+
+.header-cont {
+  align-items: center;
+  border: 2px black;
+  height: 78px;
+}
+
+header img {
+  width: 50px;
+}
+
+.header-left {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 350px;
+}
+
+.header-mid {
+  align-items: center;
+  flex: 1;
+}
+
+.header-mid button {
+  background-color: rgb(39, 39, 39);
+  padding: 10px 13px;
+  border: none;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -11px;
+}
+
+.header-mid button img {
+  width: 18px;
+  padding-top: 1px;
+}
+
+.header-mid input {
+  flex: 1;
+  height: 40px;
+  width: 0;
+  border-radius: 8px;
+  border: solid 0.5px rgb(180, 180, 180);
+  padding-inline: 15px;
+  font-size: 16px;
+  font-family: poppins;
+}
+
+.header-mid input::placeholder {
+  font-size: 16px;
+  font-family: barlow, roboto, arial;
+  font-weight: 500;
+}
+
+.header-right {
+  flex-shrink: 0;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-right p {
+  font-size: large;
+  font-weight: 700;
+  color: rgb(39, 39, 39);
+}
+
+.btn-signup {
+  gap: 10px;
+  border: none;
+  background-color: white;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*section-1*/
+
+.section-1 {
+  margin-block: 4rem;
+}
+
+.section-1 h1 {
+  margin-bottom: 2rem;
+}
+
+.watch-gallery {
+  row-gap: 38px;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.watch {
+  background-color: rgb(241, 238, 236);
+  flex-basis: 22%;
+  border-radius: 14px;
+  align-items: center;
+  min-width: 250px;
+  max-width: 500px;
+}
+
+.watch-text {
+  margin-bottom: 20px;
+  margin-top: 3px;
+  padding-inline: 20px;
+  align-self: flex-start;
+}
+
+.watch-brand {
+  color: rgb(83, 83, 83);
+}
+
+.watch-price {
+  color: rgb(78, 78, 78);
+  font-weight: 500;
+  font-family: barlow, roboto, arial;
+  margin-top: 7px;
+}
+
+.watch img {
+  transition: 0.2s all ease-in-out;
+}
+.watch img:hover {
+  scale: 1.05;
+}
+
+/*footer*/
+
+.footer-cont {
+  padding-block: 1.8rem;
+  background-color: antiquewhite;
+}
+
+.footer-cont p {
+  font-weight: 700;
+  width: fit-content;
+  margin: auto;
+}
